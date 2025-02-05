@@ -7,7 +7,13 @@ from firebase_admin import credentials, firestore
 import uuid
 
 # Initialize Firebase
-cred = credentials.Certificate(r"C:\Users\mugil\Downloads\smartfarming-6cf28-firebase-adminsdk-fbsvc-a32b0a633f.json")  # Replace with your JSON key
+import json
+import os
+
+firebase_config = json.loads(os.getenv("FIREBASE_CREDENTIALS"))
+cred = credentials.Certificate(firebase_config)
+firebase_admin.initialize_app(cred)
+
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 
