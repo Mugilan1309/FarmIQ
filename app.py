@@ -82,7 +82,7 @@ if "crop_selected" in st.session_state and st.session_state.crop_selected:
         fertilizer_input_df = pd.get_dummies(fertilizer_input_df, columns=['Soil_Type', 'Crop_Type'])
 
         # Load fertilizer dataset to align feature columns
-        fertilizer_df = pd.read_csv(r"C:\Users\mugil\Downloads\Fertilizer Recommendation.csv")
+        fertilizer_df = pd.read_csv("Fertilizer Recommendation.csv")
         X_fert = pd.get_dummies(fertilizer_df[['Temperature', 'Humidity', 'Moisture', 'Nitrogen', 'Potassium', 'Phosphorus', 'Soil_Type', 'Crop_Type']])
 
         # Align columns between input and model
