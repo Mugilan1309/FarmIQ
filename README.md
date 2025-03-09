@@ -2,7 +2,7 @@
 
 FarmIQ is a machine learning-powered web application designed to provide smart crop and fertilizer recommendations based on soil and environmental parameters that are inputted manually. This serves as a simple demonstration of prediction and recommendation systems.  
 
-🚀 **Live Demo**: [FarmIQ on Streamlit](https://mugilan1309-farmiq-app-dm3pil.streamlit.app/)  
+🚀 **Live Demo**: [FarmIQ on Streamlit](https://farmiq.streamlit.app/)  
 
 ## Features  
 ✅ **Crop Recommendation** – Suggests the best crops based on soil and climate data.  
